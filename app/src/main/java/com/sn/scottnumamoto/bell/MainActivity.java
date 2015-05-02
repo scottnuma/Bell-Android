@@ -133,6 +133,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
                 ViewGroup sort3 = (ViewGroup) childCardArrange;
                 ImageView childCardImage = (ImageView) sort3.getChildAt(0);
+                //Set the background of the card
                 childCardImage.setImageResource(selectBackground(morePeriods.getLabel()));
 
                 View childCardText = sort3.getChildAt(1);
@@ -164,10 +165,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
         return result;
     }
-    private int selectBackground( String label )
+
+    //Return the reference to the background image
+    private int selectBackground( String periodTitle )
     {
-
-
         int[] landscapes = {
                 R.drawable.m01,
                 R.drawable.m02,
@@ -178,10 +179,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 R.drawable.m07,
                 R.drawable.m08,
                 R.drawable.m09,
-                R.drawable.m10,
                 R.drawable.m11,
                 R.drawable.m12,
-                R.drawable.m13,
                 R.drawable.m14,
                 R.drawable.m15,
                 R.drawable.n01,
@@ -193,7 +192,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 R.drawable.n07,
                 R.drawable.n08,
                 R.drawable.n09,
-                R.drawable.n10,
                 R.drawable.n11,
                 R.drawable.n12,
                 R.drawable.n13,
@@ -210,8 +208,21 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         images = landscapes;
 
+        try{
+            if (periodTitle == "Final")
+            {
+                return images[cycleIterator(0, images.length)];
+            }
+            //Periods start at one rather than zero
+            int index = Integer.parseInt(periodTitle) - 1;
+
+            return images[cycleIterator(index, images.length)];
+        }
+
+
+/*
         try {
-            switch (label) {
+            switch (periodTitle) {
                 case "1":
                     return images[cycleIterator(0, images.length)];
                 case "2":
@@ -273,13 +284,20 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
             }
         }
+*/
 
-
-
+        //Make sure that cycleIterator is working
         catch ( IndexOutOfBoundsException i )
         {
+            assert false;
             return images[0];
         }
+
+        catch (NumberFormatException e) {
+            assert false; //There's something weird as the argument
+            return images[0];
+        }
+
     }
 
 
