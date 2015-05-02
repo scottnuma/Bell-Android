@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/numa_secondary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/brightOrange</item>
+        <item name="android:textColorPrimary">@color/numa_primary</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+
+</resources>
+

@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/numa_secondary" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/numa_secondary" />
+
+    <corners
+        android:bottomLeftRadius="56dp"
+        android:bottomRightRadius="56dp"
+        android:topLeftRadius="56dp"
+        android:topRightRadius="56dp" />
+
+</shape>

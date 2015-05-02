@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="84dp"
+    android:layout_height="84dp"
+
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:hint="@string/remainingTime"
+    android:textColorHint="@color/numa_primary"
+    android:id="@+id/remaining1"
+    android:textColor="@color/numa_primary"
+    android:background="@drawable/textview_design"
+    android:layout_gravity="center"
+    android:elevation="8dp"
+    android:layout_alignWithParentIfMissing="false"
+    android:gravity="center_vertical|center_horizontal"
+    android:clickable="false"
+    android:elegantTextHeight="false"
+    android:autoText="false"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" >
+
+</TextView>

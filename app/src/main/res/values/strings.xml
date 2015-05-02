@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bell</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="periodName">#</string>
+    <string name="remainingTime">##</string>
+    <string name="periodTimes1">##:## - ##:##</string>
+    <string name="caption">Scott and Eric</string>
+
+    <!--<color name="numa_primary">#ED6639</color> -->
+    <color name="numa_primary">#FFFFFF</color>
+    <color name="numa_secondary">#385B9F</color>
+    <color name="status_bar">#2e4d88</color>
+    <color name="numa_tertiary">#7f909a</color>
+    <color name="numa_quadrary">#000000</color>
+
+</resources>
