@@ -104,6 +104,22 @@ public class Schedule {
         new Period("5",     new Time(13,50),    new Time(14,30)),
         new Period("6",    new Time(14,35),    new Time(15,15))
     };
+
+    private final Period[] ODD_BLOCK_SCHEDULE = {
+            new Period("1", new Time(8,0), new Time(10,5)),
+            new Period("Break", new Time(10,5), new Time(10,20)),
+            new Period("3", new Time(10,20), new Time(12,25)),
+            new Period("Lunch", new Time(12,25), new Time(13,5)),
+            new Period("5", new Time(13,10), new Time(15,15))
+    };
+
+    private final Period[] EVEN_BLOCK_SCHEDULE = {
+            new Period("2", new Time(8,0), new Time(10,5)),
+            new Period("Break", new Time(10,5), new Time(10,20)),
+            new Period("4", new Time(10,20), new Time(12,25)),
+            new Period("Lunch", new Time(12,25), new Time(13,5)),
+            new Period("6", new Time(13,10), new Time(15,15))
+    };
     private final Period[] PEP_RALLY_ARRAY = {
         new Period("1",     new Time(8,0),      new Time(8,55)),
         new Period("2",    new Time(9,0),      new Time(9,55)),
@@ -128,6 +144,8 @@ public class Schedule {
         put("Late Start", LATE_START_ARRAY);
         put("Pep Rally", PEP_RALLY_ARRAY);
         put("Finals", FINALS_ARRAY);
+        put("Odd Block", ODD_BLOCK_SCHEDULE);
+        put("Even Block", EVEN_BLOCK_SCHEDULE);
     }};
     
 

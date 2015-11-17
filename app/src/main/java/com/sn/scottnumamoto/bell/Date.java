@@ -51,9 +51,17 @@ public class Date {
         {1,27}, {1,28}, {1,29},
         {6,16}, {6,17}, {6,18}
     };
+
+    private final static int[][] ODD_BLOCK_DAYS = {
+            {5,26}, {5,28}, {6,2}
+    };
+
+    private final static int[][] EVEN_BLOCK_DAYS = {
+            {5,27}, {5,29}, {6,3}
+    };
     
     public final static int[][][] EXCEPTION_DAYS = {
-        LATE_START_DAYS, MINIMUM_DAYS, PEP_RALLY_DAYS, FINAL_DAYS
+        LATE_START_DAYS, MINIMUM_DAYS, PEP_RALLY_DAYS, FINAL_DAYS, ODD_BLOCK_DAYS, EVEN_BLOCK_DAYS
     };
     
     public final static Map<int[][], String> SCHEDULE_MAP = new HashMap<int[][], String>() {{
@@ -62,6 +70,8 @@ public class Date {
         put(LATE_START_DAYS, "Late Start");
         put(PEP_RALLY_DAYS, "Pep Rally");
         put(FINAL_DAYS, "Finals");
+        put(ODD_BLOCK_DAYS, "Odd Block");
+        put(EVEN_BLOCK_DAYS, "Even Block");
     }};
     
     
